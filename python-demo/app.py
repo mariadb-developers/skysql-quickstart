@@ -9,7 +9,7 @@ connection = mariadb.connect(
     ssl_ca="/Users/alejandro/Downloads/skysql_chain_2022.pem"
 )
 
-cursor = connection.cursor();
+cursor = connection.cursor()
 cursor.execute("select * from messages")
 
 for (id, content) in cursor:
