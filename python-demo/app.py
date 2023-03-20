@@ -6,12 +6,11 @@ connection = mariadb.connect(
     database="demo",
     user="dbpgf24938486",
     password="1%E5pTCkW7.SFCZD27P4x7",
-    ssl_ca="/Users/alejandro/Downloads/skysql_chain_2022.pem")
+    ssl_ca="/Users/alejandro/Downloads/skysql_chain_2022.pem"
+)
 
-cursor = connection.cursor()
+cursor = connection.cursor();
 cursor.execute("select * from messages")
 
-for row in cursor:
-    print(row[1])
-
-connection.close()
+for (id, content) in cursor:
+	print(content)
