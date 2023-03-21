@@ -2,9 +2,9 @@ const mariadb = require("mariadb");
 const fs = require("fs");
 
 async function main() {
-	let cert = fs.readFileSync("/Users/alejandro/Downloads/skysql_chain_2022.pem");
 	let connection;
 	try {
+		let cert = fs.readFileSync("/Users/alejandro/Downloads/skysql_chain_2022.pem");
 		connection = await mariadb.createConnection({
 			host: "dbpgf24938486.sysp0000.db.skysql.net",
 			port: 3306,
@@ -16,6 +16,7 @@ async function main() {
 
 		let rows = await connection.query("select * from messages");
 		rows.forEach(row => console.log(row.content));
+
 	} catch (error) {
 		console.log(error);
 	} finally {
