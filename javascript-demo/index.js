@@ -2,10 +2,9 @@ const mariadb = require("mariadb");
 const fs = require("fs");
 
 async function main() {
-	let connection;
 	try {
 		let cert = fs.readFileSync("/Users/alejandro/Downloads/skysql_chain_2022.pem");
-		connection = await mariadb.createConnection({
+		var connection = await mariadb.createConnection({
 			host: "dbpgf24938486.sysp0000.db.skysql.net",
 			port: 3306,
 			database: "demo",
