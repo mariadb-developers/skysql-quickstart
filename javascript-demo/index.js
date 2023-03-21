@@ -2,7 +2,7 @@ const mariadb = require("mariadb");
 const fs = require("fs");
 
 async function main() {
-	let serverCert = fs.readFileSync("/Users/alejandro/Downloads/skysql_chain_2022.pem");
+	let cert = fs.readFileSync("/Users/alejandro/Downloads/skysql_chain_2022.pem");
 	let connection;
 	try {
 		connection = await mariadb.createConnection({
@@ -11,20 +11,15 @@ async function main() {
 			database: "demo",
 			user: "dbpgf24938486",
 			password: "1%E5pTCkW7.SFCZD27P4x7",
-			ssl: { ca: serverCert }
+			ssl: { ca: cert }
 		});
 
 		let rows = await connection.query("select * from messages");
-		rows.forEach(row => {
-			console.log(row.content);
-		});
-
+		rows.forEach(row => console.log(row.content));
 	} catch (error) {
 		console.log(error);
 	} finally {
-		if (connection) {
-			await connection.close();
-		}
+		if (connection) connection.end();
 	}
 }
 
