@@ -9,8 +9,8 @@ public class Application {
 
 	public static void main(String[] args) throws SQLException {
 		try (Connection connection = DriverManager.getConnection(
-				"jdbc:mariadb://dbpwf11745551.sysp0000.db1.skysql.net/demo?sslMode=verify-ca&serverSslCert=/Users/alejandro/Downloads/skysql_chain_2022.pem",
-				"dbpwf11745551", "VTXhBV-HS9ygo2rPR+yH7Nx")) {
+				"jdbc:mariadb://DOMAIN_NAME/demo?sslMode=verify-ca&serverSslCert=CERT_PEM",
+				"USER", "PASSWORD")) {
 
 			var statement = connection.prepareStatement("select * from messages");
 			ResultSet rs = statement.executeQuery();
