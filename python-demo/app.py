@@ -3,7 +3,6 @@ import mariadb
 try:
     with mariadb.connect(
             host="DOMAIN_NAME",
-            port=3306,
             database="demo",
             user="USER",
             password="PASSWORD",

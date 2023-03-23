@@ -5,7 +5,6 @@ async function main() {
 	try {
 		var connection = await mariadb.createConnection({
 			host: "DOMAIN_NAME",
-			port: 3306,
 			database: "demo",
 			user: "USER",
 			password: "PASSWORD",
