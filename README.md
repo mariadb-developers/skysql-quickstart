@@ -19,9 +19,26 @@ The examples were developed with the following:
  * Python 3
  * NodeJS 19 or later
 
+## Setting up a SkySQL service
+
+Before running the examples, [create a new account in SkySQL](https://skysql.mariadb.com/) (free, no credit card needed), spin up a new *Enterprise Server With Replica(s)* service, and create a new `demo` schema using the *Query Editor* in the SkySQL portal. Watch the [webinar](https://go.mariadb.com/23Q2-WBN-GLBL-DBaaS-Developing-Unstoppable-Applications-SkySQL-2023-03-28_Registration-LP.html) for detailed steps.
+
+## Configuring the connection
+
+Before running the examples, change the following placeholders in the source code:
+
+ * `DOMAIN_NAME`: Fully-qualified domain name from the SkySQL service that you created.
+ * `USER`: Username from the SkySQL service.
+ * `PASSWORD`: Password from the SkySQL service.
+ * `CERT_PEM`: Full path to the PEM file downloaded from the SkySQL service.
+
+## Running the examples
+
+Please, watch the [webinar](https://go.mariadb.com/23Q2-WBN-GLBL-DBaaS-Developing-Unstoppable-Applications-SkySQL-2023-03-28_Registration-LP.html) for detailed steps.
+
 ## Useful resources
 
-If you are new to data persistence and database connectivity with MariaDB and Java, JavaScript, or Python, check the quick start page:
+If you are new to data persistence and database connectivity with [MariaDB](https://mariadb.com) and Java, JavaScript, or Python, check the quick start page:
 
 https://mariadb.com/developers/quickstart
 
