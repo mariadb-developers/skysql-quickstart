@@ -19,11 +19,11 @@ The examples were developed with the following:
  * Python 3
  * NodeJS 19 or later
 
-## Setting up a SkySQL service
+### Setting up a SkySQL service
 
 Before running the examples, [create a new account in SkySQL](https://skysql.mariadb.com/) (free, no credit card needed), spin up a new *Enterprise Server With Replica(s)* service, and create a new `demo` schema using the *Query Editor* in the SkySQL portal. Watch the [webinar](https://go.mariadb.com/23Q2-WBN-GLBL-DBaaS-Developing-Unstoppable-Applications-SkySQL-2023-03-28_Registration-LP.html) for detailed steps.
 
-## Configuring the connection
+### Configuring the connection
 
 Before running the examples, change the following placeholders in the source code:
 
