@@ -2,7 +2,11 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=plastic)](https://opensource.org/licenses/MIT)
 
-This repository contains the examples developed during the webinar *Developing Unstoppable Applications with the SkySQL Cloud Database Service* by [Alejandro Duarte](https://twitter.com/alejandro_du). [Watch the recording here](https://go.mariadb.com/23Q2-WBN-GLBL-DBaaS-Developing-Unstoppable-Applications-SkySQL-2023-03-28_Registration-LP.html).
+This repository contains the examples developed during the webinar *Developing Unstoppable Applications with the SkySQL Cloud Database Service* by [Alejandro Duarte](https://twitter.com/alejandro_du).
+
+[Watch the recording here](https://go.mariadb.com/23Q2-WBN-GLBL-DBaaS-Developing-Unstoppable-Applications-SkySQL-2023-03-28_Registration-LP.html).
+
+![Developing Unstoppable Applications with the SkySQL Cloud Database Service](https://repository-images.githubusercontent.com/616663439/d4b9efa5-426c-4758-b79c-0541b342415b)
 
 MariaDB [SkySQL](https://mariadb.com/products/skysql/) is a fully-managed cloud database service enabling you to deploy and manage [MariaDB Enterprise Server](https://mariadb.com/products/enterprise/), [Xpand](https://mariadb.com/products/enterprise/xpand/) distributed SQL, [ColumnStore](https://mariadb.com/products/columnstore/) and Serverless Analytics powered by Apache Spark SQL as database services with only a few clicks.
 
