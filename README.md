@@ -25,20 +25,20 @@ If you are new to data persistence and database connectivity with MariaDB and Ja
 
 https://mariadb.com/developers/quickstart
 
-## Java
+### Java
 
 To learn more about how to connect to MariaDB (including SkySQL) using Java persistence frameworks and libraries such as JPA/Hibernate, Spring Boot Data, R2DBC, jOOQ, MyBatis, JakartaEE, Microprofile, check the Java quick start repository:
 
 https://github.com/mariadb-developers/java-quickstart
 
-## JavaScript/Node.js
+### JavaScript/Node.js
 
 To learn more about how to connect to MariaDB (including SkySQL) using JavaScript with TypeORM or Sequelize, check the following repositories:
 
 https://github.com/mariadb-developers/nodejs-typeorm-quickstart
 https://github.com/mariadb-developers/nodejs-sequelize-quickstart
 
-## Python
+### Python
 
 To learn more about how to connect to MariaDB (including SkySQL) using Python and SQLAlchemy, check the following repository:
 
